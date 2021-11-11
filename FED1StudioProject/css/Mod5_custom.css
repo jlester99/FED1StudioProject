@@ -1,0 +1,27 @@
+﻿body {
+
+}
+header{
+    background-color: lightblue;
+}
+
+main{
+    background-color: lightgray;
+}
+
+h1{
+    font-size: 20px;
+    color: darkgray;
+}
+
+h2{
+    font-size:18px;
+    color:purple;
+}
+footer {
+    font-style: italic;
+    font-size:small;
+    background-color: #808080;
+    color: black;
+
+}
