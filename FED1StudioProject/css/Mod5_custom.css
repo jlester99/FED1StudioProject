@@ -70,7 +70,7 @@ main {
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 30px;
     color: darkgray;
     border: double;
     border-color: black;
@@ -85,6 +85,29 @@ h2 {
 footer {
     font-style: italic;
     font-size: small;
-    background-color: #808080;
+    background-color: lightskyblue;
     color: black;
-}
+    padding: 15px 5px 20px;
+ }
+
+.contact {
+    text-align:center;
+    font-weight: bold;
+    color: black;
+    list-style: none;
+    }
+    .contact aside ul {
+        font-weight: bold;
+        color: #360E54;
+        list-style: none;
+    }
+    .contact h1 {
+        color: black;
+        border: none;
+    }
+    .contact li {
+        padding: 5px 3px 5px 3px;
+        
+        
+    }
+   
