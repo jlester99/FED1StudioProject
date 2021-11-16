@@ -1,12 +1,34 @@
-﻿body {
+﻿/*#region Import */
+/* This is an imported stylesheet. We are importing one external stylesheet into another.  We only have to link to THIS styleshee (custom.css) on the HTML pages
+    **This process is largely deprecated but you could still see it in legacy code.
+*/
+/*@import url('import.css');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=PT+Mono&display=swap');
+/*
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Space Mono', momospace;*/
+
+/*#endregion */
+
+body {
+    margin: 0 auto;
+    /*background-image: url(/images/central-perk-logo-d29bf50a0a-seeklogo.com.png);
+    background-image: url('../images/door frame3.png');
+    background-image: url('../images/frame on door.png');
+    background-color: #f1c801;
+    background: url('../images/frame on door resized 1050px.png') no-repeat center center;
+    background: url('../images/frame on door 2.jpg') no-repeat center center;
+    background-size: 50%;*/
+    background-color: #aca0d0;
+    background-image: url('../images/pastel background.jfif');
+    background-repeat: repeat-x;
+    background-size: cover;
 }
 
-header {
-    background-color: lightblue;
-}
 
 ul.blocklist {
-    background-color: teal;
+    background-color: darkblue;
     padding: 0;
 }
 
@@ -30,7 +52,7 @@ ul.blocklist {
 
 /*base link (all links*/
 a {
-    color: teal;
+    color: darkblue;
     font-weight: bold;
     text-decoration: none; /*removes the default underline*/
 }
@@ -45,15 +67,16 @@ nav a {
     }
 
 nav ul {
-    background-color: #8E93E3;
+    margin: 0;
+    background-color: rgba(106,69,162,255);
     padding: 0;
-    border-top: 2px dotted darkgray;
-    border-bottom: 2px dotted darkgray;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    background-size: 200px;
 }
 
 nav li:hover {
-    background-color: #824F7A;
-    color: #fff;
+    background-color: #f1be3f;
 }
 
 nav ul li {
@@ -65,30 +88,25 @@ nav ul li {
         display: block;
     }
 
-main {
+main h1 {
     background-color: lightgray;
+    font-family: 
 }
-
 h1 {
-    font-size: 30px;
-    color: darkgray;
-    border: double;
-    border-color: black;
-    text-decoration: none !important;
+    color: darkblue;
+    font-size: 24px;
 }
 
 h2 {
-    font-size: 18px;
-    color: purple;
+    color: #360E54;
+    text-align: center;
+    font-size: 1.25em;
 }
 
-footer {
-    font-style: italic;
-    font-size: small;
-    background-color: lightskyblue;
-    color: black;
-    padding: 15px 5px 20px;
- }
+aside, nav, section h1 {
+    font-size: 1.17em;
+    marigin-block-start
+}
 
 .contact {
     text-align:center;
@@ -107,7 +125,204 @@ footer {
     }
     .contact li {
         padding: 5px 3px 5px 3px;
-        
-        
+             
     }
+header {
+    background-color: #7668cc;
+    border-radius: 5px;
+    background-image: url('../images/violet bg.jfif');
+    background-image: url('../images/frame on door 2 flipped.jpg');
+        background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1, header p {
+    margin: 5px 0 5px 150px;
+}
+
+    header p {
+        font-family: 'PT Mono', momospace;
+        font-style: italic;
+        font-weight: bold;
+        font-size: .75em;
+        margin: 5px 0 5px 150px;
+        text-shadow: 3px -2px 5px #BEF2FF;
+    }   
+#headerOverlay {
+    background-image: url(../images/central-perk-logo-D29BF50A0A-seeklogo.com.png);
+    background-image: url('../images/cp logo 3.png');
+    background-image: url('../images/frame on door with text2.jpg');
+    background-repeat: no-repeat;
+    background-size: 90px;
+    background-position: 3% center;
+    padding: 2em;
+}
+header h1 {
+    /*ext-shadow: 3px -2px 2px #BEF2FF; */
+    text-shadow: 3px -2px 2px #f1c801;
+    text-align: left;
+    letter-spacing: 0.1em;
+    color: #360E54;
+    font: 1.7em 'Architects Daughter', cursive;
+    font-weight: bold;
+}
+header p {
+    
+}
+
+footer {
+    font-style: italic;
+    font-size: .5em;
+    background-color: darkgray;
+    background-size: cover;
+    color: black;
+    margin: 0 auto;
+    padding: 0 0 15px 0;
+    
+}
+footer li {
+    list-style: none;
+    text-align: left;
+}
+li.iconTwitter, li.iconFacebook, li.iconIG {
+    width: 40px;
+    height: 10px;
+    display: inline-block;
+    float: right;
+}
+nav ul {
+    min-height: 52px;
+    background-color: rgba(106,69,162,255);
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: 200px;
+}
+
+/*#region Module 8 Float/Clear Continued */
+/*For colors.html - 2 column layout with 2 columns floated*/
+#colorsLeftColumn {
+    width: 75%;
+    float: left;
+    border-right: 1px dashed teal;
+    box-sizing: border-box;
+}
+
+#colorsRightColumn {
+    width: 25%;
+    float: right;
+}
+/*For fonts.html - 2 column layout with 2 columns floated*/
+#fontsLeftColumn {
+    width: 75%;
+    float: left;
+    border-right: 1px dashed teal;
+    box-sizing: border-box;
+}
+
+#fontsRightColumn {
+    width: 25%;
+    float: right;
+}
+/*For images.html - 2 column layout with 2 columns floated*/
+#imagesLeftColumn {
+    width: 50%;
+    float: left;
+    border-right: 1px dashed teal;
+    box-sizing: border-box;
+}
+#imagesMiddleColumn {
+    width: 25%;
+    float: left;
+    border-right: 1px dashed teal;
+    box-sizing: border-box;
+}
+
+#imagesRightColumn {
+    width: 25%;
+    float: right;
+}
+div.galleryItem {
+    margin: 5px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 235px;
+    text-align: left;
+}
+
+    div.galleryItem:hover {
+        border: 1px solid #360E54;
+    }
+
+    div.galleryItem img {
+        width: 100%;
+        height: 180px;
+    }
+
+    div.galleryItem a:hover {
+        background-color: #360E54;
+    }
+#courseImageGallery {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    font-size: .75em;
+}
+#courseImageGallery h2{
+    margin:auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+    div #webResources article {
+    float: left;
+    width: 33.33%;
+}
+
+/*#endregion*/
+
+.courseInfo h2 {
+    background-color: none;
+}
+table td, th {
+    border: 1px solid darkgray;
+    border-style: solid none none none;
+    border-bottom: none;
+    padding: 10px;
+    width: 90px;
+    height: 15px;
+    text-align: left;
+    /*vertical-align: middle; -----this is actually default but added for reference*/
+}
+
+table {
+    align-content: center;
+}
+table th {
+    background-color: darkgray;
+    
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightgray; /*apply alternating background to each row*/
+}  
+.courseTable {
+    border-collapse: collapse;
+    border-bottom: none;
+    font-family: 'Times New Roman';
+    font-size: .7em;
+    margin: auto;
+}
+article h1 {
+    font-size: 1em;
+    text-align:center;
+    margin: 0;
+    background-color: none;
+}
+
+.fa  {
+    background-color: rgb(59, 89, 152);
+    padding: 2px;
+}
+
+
+
    
