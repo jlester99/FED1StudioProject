@@ -13,22 +13,22 @@
 
 body {
     margin: 0 auto;
-    /*background-image: url(/images/central-perk-logo-d29bf50a0a-seeklogo.com.png);
-    background-image: url('../images/door frame3.png');
-    background-image: url('../images/frame on door.png');
-    background-color: #f1c801;
-    background: url('../images/frame on door resized 1050px.png') no-repeat center center;
-    background: url('../images/frame on door 2.jpg') no-repeat center center;
-    background-size: 50%;*/
     background-color: #aca0d0;
+    background-image: url(../images/pink_pastel_marble_background.jpg);
+    background-image: url(../images/wp4444401-lavender-marble-wallpapers.jpg);
+    background-image: url(../images/SL-100420-36140-29.jpg);
     background-image: url('../images/pastel background.jfif');
-    background-repeat: repeat-x;
+    background-image: url('../images/color background.jfif');
+    background-image: url('../images/colorful pastel bg.jpg');
+    background-image: url(../images/SL-100420-36140-29.jpg);
+    background-image: url('../images/colorful paws bg.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
 
 ul.blocklist {
-    background-color: darkblue;
+    background-color: rgb(59, 89, 152);
     padding: 0;
 }
 
@@ -53,6 +53,7 @@ ul.blocklist {
 /*base link (all links*/
 a {
     color: darkblue;
+    color: rgb(59, 89, 152);
     font-weight: bold;
     text-decoration: none; /*removes the default underline*/
 }
@@ -68,11 +69,11 @@ nav a {
 
 nav ul {
     margin: 0;
-    background-color: rgba(106,69,162,255);
     padding: 0;
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
-    background-size: 200px;
+    background-size: cover;
+    background-color: rgba(18, 2, 23, 0.50);
 }
 
 nav li:hover {
@@ -89,9 +90,11 @@ nav ul li {
     }
 
 main h1 {
-    background-color: lightgray;
-    font-family: 
+    background-color: rgba(140, 115, 115,.6);
+    background-color: rgba(18, 2, 23, 1);
+    background-color:rgba(211, 211, 211, 0.9) ;
 }
+
 h1 {
     color: darkblue;
     font-size: 24px;
@@ -100,45 +103,48 @@ h1 {
 h2 {
     color: #360E54;
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 
 aside, nav, section h1 {
     font-size: 1.17em;
-    marigin-block-start
 }
 
 .contact {
-    text-align:center;
+    text-align: center;
     font-weight: bold;
     color: black;
     list-style: none;
-    }
+}
+
     .contact aside ul {
         font-weight: bold;
         color: #360E54;
         list-style: none;
     }
+
     .contact h1 {
         color: black;
         border: none;
     }
+
     .contact li {
         padding: 5px 3px 5px 3px;
-             
     }
+
 header {
-    background-color: #7668cc;
+    /*background-color: #7668cc;  */
     border-radius: 5px;
-    background-image: url('../images/violet bg.jfif');
-    background-image: url('../images/frame on door 2 flipped.jpg');
-        background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../images/purple-paw-prints background.jpg');
+    /*background-image: url(../images/SL-100420-36140-29.jpg); */
+    background-color: rgba(18, 2, 23, 0.50);
+    background-repeat: repeat-x;
+    background-size: 80%;
 }
 
-header h1, header p {
-    margin: 5px 0 5px 150px;
-}
+    header h1, header p {
+        margin: 5px 0 5px 150px;
+    }
 
     header p {
         font-family: 'PT Mono', momospace;
@@ -147,16 +153,19 @@ header h1, header p {
         font-size: .75em;
         margin: 5px 0 5px 150px;
         text-shadow: 3px -2px 5px #BEF2FF;
-    }   
+    }
+
 #headerOverlay {
     background-image: url(../images/central-perk-logo-D29BF50A0A-seeklogo.com.png);
     background-image: url('../images/cp logo 3.png');
     background-image: url('../images/frame on door with text2.jpg');
+    background-image: url('../images/colorful dog paw.png');
     background-repeat: no-repeat;
     background-size: 90px;
     background-position: 3% center;
     padding: 2em;
 }
+
 header h1 {
     /*ext-shadow: 3px -2px 2px #BEF2FF; */
     text-shadow: 3px -2px 2px #f1c801;
@@ -166,9 +175,7 @@ header h1 {
     font: 1.7em 'Architects Daughter', cursive;
     font-weight: bold;
 }
-header p {
-    
-}
+
 
 footer {
     font-style: italic;
@@ -178,24 +185,29 @@ footer {
     color: black;
     margin: 0 auto;
     padding: 0 0 15px 0;
-    
 }
-footer li {
-    list-style: none;
-    text-align: left;
-}
+
+    footer li {
+        list-style: none;
+        text-align: left;
+    }
+
 li.iconTwitter, li.iconFacebook, li.iconIG {
     width: 40px;
     height: 10px;
     display: inline-block;
     float: right;
 }
+
 nav ul {
-    min-height: 52px;
-    background-color: rgba(106,69,162,255);
+    min-height: 45px;
+    background-image: url('../images/purple-paw-prints background.jpg');
+    /*background-image: url('../images/colorful paws bg.jpg'); */
+    /*background-image: url('../images/colorful paws bg.jpg'); */
+    background-image: url(../images/pasteldogpaws_470x.jpg);
     background-repeat: repeat-x;
     background-position: top;
-    background-size: 200px;
+    background-size: 25%;
 }
 
 /*#region Module 8 Float/Clear Continued */
@@ -230,6 +242,7 @@ nav ul {
     border-right: 1px dashed teal;
     box-sizing: border-box;
 }
+
 #imagesMiddleColumn {
     width: 25%;
     float: left;
@@ -241,12 +254,14 @@ nav ul {
     width: 25%;
     float: right;
 }
+
 div.galleryItem {
     margin: 5px;
     border: 1px solid #ccc;
     display: inline-block;
     width: 235px;
     text-align: left;
+    height: 300px;
 }
 
     div.galleryItem:hover {
@@ -259,20 +274,43 @@ div.galleryItem {
     }
 
     div.galleryItem a:hover {
-        background-color: #360E54;
+        background-color: #f1c801;
     }
+
+    div.galleryItem p {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin: 1px 0 0 0;
+        padding: 4px 8px 1px 8px;
+        background-color: lightblue;
+    }
+    div.galleryItem .description {
+        padding: 2px 8px 8px 8px;
+    }
+    div.galleryItem .description, .courseTable {
+        background-color: lavender;
+    }
+
+    div.galleryItem a {
+        color: teal;
+        text-decoration: underline;
+    }
+
+
 #courseImageGallery {
     margin: 0 auto;
     width: 90%;
     text-align: center;
-    font-size: .75em;
+    font-size: .65em;
 }
-#courseImageGallery h2{
-    margin:auto;
-    text-align: center;
-    font-size: 1.5em;
-}
-    div #webResources article {
+
+    #courseImageGallery h2 {
+        margin: auto;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+div #webResources article {
     float: left;
     width: 33.33%;
 }
@@ -282,11 +320,12 @@ div.galleryItem {
 .courseInfo h2 {
     background-color: none;
 }
+
 table td, th {
     border: 1px solid darkgray;
     border-style: solid none none none;
     border-bottom: none;
-    padding: 10px;
+    padding: 7px;
     width: 90px;
     height: 15px;
     text-align: left;
@@ -295,15 +334,22 @@ table td, th {
 
 table {
     align-content: center;
-}
-table th {
-    background-color: darkgray;
-    
+    width: 400px;
 }
 
-tbody tr:nth-child(odd) {
-    background-color: lightgray; /*apply alternating background to each row*/
-}  
+    table th {
+        background-color: #B44A92;
+        background-color: #9B96BF;
+        background-color: #487BA8;
+        text-align: center;
+    }
+
+tbody tr:nth-child(even) {
+    background-color: #E8C8EF; /*apply alternating background to each row*/
+    background-color: #B9E1FB;
+    background-color: #BFE8FE;
+}
+
 .courseTable {
     border-collapse: collapse;
     border-bottom: none;
@@ -311,18 +357,17 @@ tbody tr:nth-child(odd) {
     font-size: .7em;
     margin: auto;
 }
+
 article h1 {
     font-size: 1em;
-    text-align:center;
+    text-align: center;
     margin: 0;
     background-color: none;
 }
 
-.fa  {
-    background-color: rgb(59, 89, 152);
+Header .fa {
+    background-color: rgba(212,185,254,255);
+    background-color: white;
     padding: 2px;
+    font-size: x-large;
 }
-
-
-
-   
