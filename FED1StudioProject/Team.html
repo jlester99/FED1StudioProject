@@ -4,34 +4,58 @@
     <title>Team Information</title>
     <meta charset="utf-8" />
 
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="css/Mod5_custom.css" />
-   
+
 </head>
 <body>
     <header>
         <div id="headerOverlay">
-            <h1>F-R-I-E-N-D-S Life Lessons</h1>
-            <p>We'll Be There For You!</p>
+            <h1>Pawsitive Vibes K9 Academy</h1>
+            <p>Pawsitively the best to teach the best!</p>
             <ul>
                 <li class="iconIG">
-                    <a title="Follow Us on Instagram" href="http://www.instagram.com" target="_blank" <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a title="Follow Us on Instagram" href="http://www.instagram.com" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
                 </li>
 
 
                 <li class="iconTwitter">
                     <a href="http://www.twitter.com/weteachstuff"
-                       title="Follow Us on Twitter" target="_blank" <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                       title="Follow Us on Twitter" target="_blank"> <i class="fa fa-twitter" aria-hidden="true">
+                                </i></a>
                 </li>
                 <li class="iconFacebook">
                     <a href="http://www.facebook.com/learnwithus/"
-                       title="Like Us on Facebok" target="_blank" <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                       title="Like Us on Facebok" target="_blank"> <i class="fa fa-facebook-square" aria-hidden="true"></i>
                     </a>
                 </li>
             </ul>
         </div>
+
     </header>
 
-    <nav>
+    <nav id="navStyle">
         <ul>
             <li><a href="index.html" target="_blank">Home</a></li>
             <li><a href="Classes.html" target="_blank">Classes</a></li>
@@ -40,72 +64,178 @@
         </ul>
     </nav>
     <main>
-        <section>
-            <h1>Leadership Team Members</h1>
-            <article>
-
-                <dt>Instructors</dt>
-                <dd>Ross Geller (Lead)</dd>
-                <dd>Monica Geller</dd>
-                <dd>Phoebe Buffay</dd>
-                <br />
-                <dt>Sales</dt>
-                <dd>Chandler Bing (Lead)</dd>
-                <dd>Rachel Green</dd>
-                <dd>David Unknown</dd>
-                <br />
-                <dt>Operations Lead</dt>
-                <dd>Mike Hannigan</dd>
-                <br />
-                <dt>Administration/Support</dt>
-                <dd>Janice Hosenstein</dd>
-                <dd>Joey Tribbiani</dd>
-                <br />
-                <dt>Executive Leadership</dt>
-                <dd>Marta Kauffman</dd>
-                <dd>Kevin Bright</dd>
-                <br />
-                <dt>President</dt>
-                <dd>David Crane</dd>
-                <br />
-                <!--<ul>
-                    <li>Monica</li>
-                    <li>Phoebe</li>
-                    <li>Ross</li>
-                    <li>Rachel</li>
-                    <li>Chandler</li>
-                    <li>Joey</li>-->
-                    <p>
-                        Lorem Ipsum is sample text that is often used when websites are being designed before the actual written copy has been created. Traditionally, it was written in latin but there are now many online resources for generating themed lorem ipsum.
-                    </p>
+        <!-- #region name -->
+        <!--from web sandbox -->
+        <aside id="teamRightColumn">
+            <!-- Named Anchor/Bookmark Link Examples-->
+            <div class="asideWrapper">
+                <ul class="asideList">
+                    <li><a href="#leadership">Leadership</a></li>
+                    <li><a href="#sales">Sales</a></li>
+                    <li><a href="#admin">Adminstration</a></li>
+                    <li><a href="#instructors">Instructors</a></li>
                 </ul>
-                <!--TODO - enter class topics in own containers or table? across page and down-->
+            </div>
+
+        </aside>
+        <section class="mainWrapper" id="teamLeftColumn">
+            <h1>Meet Our Amazing Team</h1>
+            <article id="teamGallery">
+                <h2 id="leadership">Leadership</h2>
+                <section>
+                    <!--<h3>Stella Thompson, President</h3>-->
+                    <img src="images/woman 1.jfif" 
+                         alt="headshot image of woman 1"
+                         title="woman 1 headshot" width="200" height="200" class="teamPhoto" />
+                    <br />
+                    <p> <h3 class="position">Stella Thompson - Founder/President</h3> 
+                        Lorem Ipsum is sample text that is often used when websites are being designed before the actual written copy has been created. Traditionally, it was written in latin but there are now many online resources for generating themed lorem ipsum.
+                    </p><br />
+                </section>
+                <section>
+                    <img src="images/woman 8.jfif"
+                         alt="headshot image of woman 8"
+                         title="woman 8 headshot" width="200" height="200" class="teamPhoto" />
+                    <p>
+                        <h3 class="position">Alexandria Prince - Co-Founder/Vice President</h3>
+                        Lorem Ipsum is sample text that is often used when websites are being designed before the actual written copy has been created. Traditionally, it was written in latin but there are now many online resources for generating themed lorem ipsum.
+                    </p> <br /><br />
+                </section>
+
+                <section>
+                    <img src="images/guy 2.jfif"
+                         alt="headshot image of guy 2"
+                         title="woman 1 headshot" width="200" height="200" class="teamPhoto" />
+
+                    <p>
+                        <h3 class="position">Bruce Armstrong - Chief Financial Officer</h3>
+                        Lorem Ipsum is sample text that is often used when websites are being designed before the actual written copy has been created. Traditionally, it was written in latin but there are now many online resources for generating themed lorem ipsum.  Lorem Ipsum is sample text that is often used when websites are being designed before the actual written copy has been created. Traditionally, it was written in latin but there are now many online resources for generating themed lorem ipsum.
+                    </p><br />
+                </section>
+                <h2 id="sales">Sales</h2>
+                <section>
+                    <img src="images/woman 6.jfif"
+                         alt="headshot image of woman 6"
+                         title="woman 6 headshot" width="200" height="200" class="teamPhoto" />
+                    <p>
+                        <h3 class="position">Monica Green - Sales Lead</h3>
+                        designed before the actual written copy has been created. Traditionally, it was written in latin but there are now many online resources for generating themed lorem ipsum.
+                    </p><br />
+                </section>
+                <section>
+                    <img src="images/guy 3.jfif"
+                         alt="headshot image of guy 3"
+                         title="guy 3 headshot" width="200" height="200" class="teamPhoto" />
+
+                    <p>
+                        <h3 class="position">Daniel Barrington - Sales</h3>
+
+                        Lorem Ipsum is sample text that is often used when websites are being designed before the actual written copy has been created. Traditionally, it was written in latin but there are now many online resources for generating themed lorem ipsum.
+                    </p><br />
+                </section>
+                <section>
+                    <img src="images/woman 5.jfif"
+                         alt="headshot image of woman 5"
+                         title="woman 5 headshot" width="200" height="200" class="teamPhoto" />
+                    <p>
+                        <h3 class="position">Kiera Roberts - Sales</h3>
+
+                        Lorem Ipsum is sample text that is often used when websites are being designed before the actual written copy has been created. Traditionally, it was written in latin but there are now many online resources for generating themed lorem ipsum.
+                    </p> <br /><br />
+                </section>
+
+                <h2 id="admin">Administration</h2>
+                <section>
+                    <img src="images/guy 9.jfif"
+                         alt="headshot image of guy 9"
+                         title="guy 9 headshot" width="200" height="200" class="teamPhoto" />
+                    <p>
+                        <h3 class="position">William Gellar - Operations Lead</h3>
+                        Lorem Ipsum is sample text that is often used when websites are being designed before the actual written copy has been created. Traditionally, it was written in latin but there are now many online resources for generating themed lorem ipsum.
+                    </p><br />
+                </section>
+                <section>
+                    <img src="images/woman 9.jfif"
+                         alt="headshot image of woman 9"
+                         title="woman 9 headshot" width="200" height="200" class="teamPhoto" />
+
+                    <p>
+                        <h3 class="position">Rachel Buffay - Administrative Assistant</h3>
+                        Lorem Ipsum is sample text that is often used when websites are being designed before the actual written copy has been created. Traditionally, it was written in latin but there are now many online resources for generating themed lorem ipsum.
+                    </p><br />
+                </section>
+                <section>
+                    <img src="images/woman 11.jfif"
+                         alt="headshot image of woman 11"
+                         title="woman 11 headshot" width="200" height="200" class="teamPhoto" />
+                    <p>
+                        <h3 class="position">Phoebe Hannigan - Office Clerk</h3>
+                        Lorem Ipsum is sample text that is often used when websites are being designed before the actual written copy has been created. Traditionally, it was written in latin but there are now many online resources for generating themed lorem ipsum.
+                    </p> <br /><br />
+                </section>
+
+                <h2 id="instructors">Instructors</h2>
+                <section>
+                    <img src="images/woman 7.jfif" class="teamPhoto"
+                         alt="headshot image of woman 7"
+                         title="woman 7 headshot" width="200" height="200" class="teamPhoto" />
+                    <p>
+                        <h3 class="position">Penny Davidson - Lead Instructor</h3>
+
+                        Lorem Ipsum is sample text that is often used when websites are being designed before the actual written copy has been created. Traditionally, it was written in latin but there are now many online resources for generating themed lorem ipsum.
+                    </p><br />
+                </section>
+                <section>
+                    <img src="images/woman 10.jfif"
+                         alt="headshot image of woman 10"
+                         title="woman 10 headshot" width="200" height="200" class="teamPhoto" />
+
+                    <p>
+                        <h3 class="position">Angelica Bullock - Instructor</h3>
+
+                        Lorem Ipsum is sample text that is often used when websites are being designed before the actual written copy has been created. Traditionally, it was written in latin but there are now many online resources for generating themed lorem ipsum.
+                    </p><br />
+                </section>
+                <section>
+                    <img src="images/guy 4.jfif"
+                         alt="headshot image of guy 4"
+                         title="guy 4 headshot" width="200" height="200" class="teamPhoto" />
+                    <p>
+                        <h3 class="position">Joseph Tribiani - Instructor</h3>
+                        Joseph is a graduate of our program. text that is often used when websites are being designed before the actual written copy has been created. Traditionally, it was written in latin but there are now many online resources for generating themed lorem ipsum.
+                    </p> <br /><br />
+                </section>
+
 
             </article>
-            
-        </section>
 
-        <!--<aside>Side Nav</aside>-->
+        </section>
+        <div class="clear"></div>
+
     </main>
-    <footer>Friends Career Lessons &copy;2021 - All Rights Reserved
-        <div id="footer">
-            <ul>
-                <li class="iconIG">
-                    <a title="Follow Us on Instagram" href="http://www.instagram.com" target="_blank" <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>
-                <li class="iconTwitter">
-                    <a href="http://www.twitter.com/weteachstuff"
-                       title="Follow Us on Twitter" target="_blank" <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </li>
-                <li class="iconFacebook">
-                    <a href="http://www.facebook.com/learnwithus/"
-                       title="Like Us on Facebok" target="_blank" <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <footer>
+        <article id="footer">
+            <div class="icons">
+                <a href="http://www.instagram.com"
+                   title="Follow Us on Instagram" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true">
+                    </i>
+                </a>
+                <a href="http://www.twitter.com/weteachstuff"
+                   title="Follow Us on Twitter" target="_blank">
+                    <i class="fa fa-twitter" aria-hidden="true">
+                    </i>
+                </a>
+                <a href="http://www.facebook.com/learnwithus/"
+                   title="Like Us on Facebok" target="_blank">
+                    <i class="fa fa-facebook-square" aria-hidden="true">
+                    </i>
+                </a>
+                <p>Pawsitive Vibes Only K9 Academy &copy; - All Rights Reserved</p>
+            </div>
+        </article>
+
     </footer>
-    <!--TODO - add social media logos/links-->
 
 </body>
 </html>

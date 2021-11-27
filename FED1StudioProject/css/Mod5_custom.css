@@ -1,31 +1,15 @@
-﻿/*#region Import */
-/* This is an imported stylesheet. We are importing one external stylesheet into another.  We only have to link to THIS styleshee (custom.css) on the HTML pages
-    **This process is largely deprecated but you could still see it in legacy code.
-*/
-/*@import url('import.css');*/
+﻿/*@import url('import.css');*/
 
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=PT+Mono&display=swap');
 /*
     font-family: 'Architects Daughter', cursive;
     font-family: 'Space Mono', momospace;*/
 
-/*#endregion */
-
 body {
     margin: 0 auto;
-    background-color: #aca0d0;
-    background-image: url(../images/pink_pastel_marble_background.jpg);
-    background-image: url(../images/wp4444401-lavender-marble-wallpapers.jpg);
-    background-image: url(../images/SL-100420-36140-29.jpg);
-    background-image: url('../images/pastel background.jfif');
-    background-image: url('../images/color background.jfif');
-    background-image: url('../images/colorful pastel bg.jpg');
-    background-image: url(../images/SL-100420-36140-29.jpg);
-    background-image: url('../images/colorful paws bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: repeating-linear-gradient( 0deg, #FAE3B7, #BD89C7, #F6DBA4, #e7cfdd, #f5ebdf, #DAD1EE, #EBE8Ee, #EBE8E3, #ffebb9);
+    /*background-size: cover;*/
 }
-
 
 ul.blocklist {
     background-color: rgb(59, 89, 152);
@@ -52,15 +36,16 @@ ul.blocklist {
 
 /*base link (all links*/
 a {
-    color: darkblue;
+    color: indigo;
     color: rgb(59, 89, 152);
     font-weight: bold;
     text-decoration: none; /*removes the default underline*/
+    font-family: cursive;
+    font-size: .75em;
+    background-color: transparent;
 }
 
 nav a {
-    font-weight: bold;
-    color: #360E54;
 }
 
     nav a:hover, nav a:active, nav a:focus {
@@ -69,15 +54,17 @@ nav a {
 
 nav ul {
     margin: 0;
-    padding: 0;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
-    background-size: cover;
-    background-color: rgba(18, 2, 23, 0.50);
+    padding: 5px 0 0 0;
+    border-top: 2px solid darkgray;
+    border-bottom: 2px solid darkgray;
+    background-color: rgba(230, 230, 250, 0.55);
+    color: #360E54;
+    min-height: 42px;
+    background: repeating-linear-gradient(180deg, lightyellow, lavender, pink, lightyellow, #ffebb9, transparent 100px);
 }
 
 nav li:hover {
-    background-color: #f1be3f;
+    background-color: lavender;
 }
 
 nav ul li {
@@ -90,9 +77,9 @@ nav ul li {
     }
 
 main h1 {
-    background-color: rgba(140, 115, 115,.6);
+    /*background-color: rgba(140, 115, 115,.6);
     background-color: rgba(18, 2, 23, 1);
-    background-color:rgba(211, 211, 211, 0.9) ;
+    background-color: rgba(211, 211, 211, 0.9);*/
 }
 
 h1 {
@@ -103,7 +90,18 @@ h1 {
 h2 {
     color: #360E54;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.75em;
+    text-shadow: 3px -2px 5px #BEF2FF;
+    font-family: Architects Daughter;
+}
+
+h3 {
+    color: #360E54;
+    text-align: center;
+    font-size: 1.25em;
+    text-shadow: 3px -2px 5px #BEF2FF;
+    font-family: Architects Daughter;
+    margin: 20px 0px 2px 20px;
 }
 
 aside, nav, section h1 {
@@ -120,7 +118,7 @@ aside, nav, section h1 {
     .contact aside ul {
         font-weight: bold;
         color: #360E54;
-        list-style: none;
+        list-style-type: none;
     }
 
     .contact h1 {
@@ -135,11 +133,8 @@ aside, nav, section h1 {
 header {
     /*background-color: #7668cc;  */
     border-radius: 5px;
-    background-image: url('../images/purple-paw-prints background.jpg');
-    /*background-image: url(../images/SL-100420-36140-29.jpg); */
-    background-color: rgba(18, 2, 23, 0.50);
-    background-repeat: repeat-x;
-    background-size: 80%;
+    background-size: cover;
+    background-image: url('../images/colorful bg pastel border.jpg');
 }
 
     header h1, header p {
@@ -156,9 +151,6 @@ header {
     }
 
 #headerOverlay {
-    background-image: url(../images/central-perk-logo-D29BF50A0A-seeklogo.com.png);
-    background-image: url('../images/cp logo 3.png');
-    background-image: url('../images/frame on door with text2.jpg');
     background-image: url('../images/colorful dog paw.png');
     background-repeat: no-repeat;
     background-size: 90px;
@@ -179,18 +171,38 @@ header h1 {
 
 footer {
     font-style: italic;
-    font-size: .5em;
-    background-color: darkgray;
+    background-color: lavender;
     background-size: cover;
-    color: black;
+    color: darkblue;
     margin: 0 auto;
-    padding: 0 0 15px 0;
+    padding: 1.25%;
+    font-size: .85em;
+    font-weight:bold;
+    background-image: url('../images/colorful bg pastel border.jpg');
+
 }
 
     footer li {
         list-style: none;
         text-align: left;
     }
+
+    footer .fa {
+        font-size: medium;
+    }
+
+    footer div.icons a {
+        list-style: none;
+        text-align: left;
+        width: 40px;
+        height: 10px;
+        display: inline-block;
+        float: right;
+    }
+
+#footer p {
+    margin: 0 auto;
+}
 
 li.iconTwitter, li.iconFacebook, li.iconIG {
     width: 40px;
@@ -199,19 +211,6 @@ li.iconTwitter, li.iconFacebook, li.iconIG {
     float: right;
 }
 
-nav ul {
-    min-height: 45px;
-    background-image: url('../images/purple-paw-prints background.jpg');
-    /*background-image: url('../images/colorful paws bg.jpg'); */
-    /*background-image: url('../images/colorful paws bg.jpg'); */
-    background-image: url(../images/pasteldogpaws_470x.jpg);
-    background-repeat: repeat-x;
-    background-position: top;
-    background-size: 25%;
-}
-
-/*#region Module 8 Float/Clear Continued */
-/*For colors.html - 2 column layout with 2 columns floated*/
 #colorsLeftColumn {
     width: 75%;
     float: left;
@@ -257,7 +256,7 @@ nav ul {
 
 div.galleryItem {
     margin: 5px;
-    border: 1px solid #ccc;
+    /*border: 1px solid #ccc;*/
     display: inline-block;
     width: 235px;
     text-align: left;
@@ -280,22 +279,53 @@ div.galleryItem {
     div.galleryItem p {
         font-weight: bold;
         font-size: 1.2em;
+        font-family: cursive;
         margin: 1px 0 0 0;
         padding: 4px 8px 1px 8px;
-        background-color: lightblue;
+        color: indigo;
     }
+
     div.galleryItem .description {
         padding: 2px 8px 8px 8px;
+        width: 230px;
+        height: 90px;
     }
+
     div.galleryItem .description, .courseTable {
-        background-color: lavender;
+        /*background-color: lavender;*/
     }
 
     div.galleryItem a {
         color: teal;
         text-decoration: underline;
+        font-style: italic;
     }
+#teamGallery img {
+    padding: 2px 8px 8px 8px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+#teamGallery section {
+    width: 85%;
+    margin: 0 auto;
+    display: inline-block;
+    margin-top:0;
+}
+#teamGallery .position {
+    font-size: .9em;
+    text-align: left;
+    color: darkblue;
+}
+#teamGallery p {
+    margin: 0 25px 25px 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.teamPhoto {
+    float: left;
+    margin: 0 50px 50px 75px;
 
+}
 
 #courseImageGallery {
     margin: 0 auto;
@@ -305,15 +335,11 @@ div.galleryItem {
 }
 
     #courseImageGallery h2 {
-        margin: auto;
+        margin: 0 auto;
         text-align: center;
         font-size: 1.5em;
     }
 
-div #webResources article {
-    float: left;
-    width: 33.33%;
-}
 
 /*#endregion*/
 
@@ -341,13 +367,18 @@ table {
         background-color: #B44A92;
         background-color: #9B96BF;
         background-color: #487BA8;
+        background-color: #E6BAB9;
         text-align: center;
+        /*background-image: url('../images/colorful bg pastel rotated.jpg');*/
     }
 
 tbody tr:nth-child(even) {
     background-color: #E8C8EF; /*apply alternating background to each row*/
-    background-color: #B9E1FB;
-    background-color: #BFE8FE;
+    background-color: #EECED1;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #F7F4E5; /*apply alternating background to each row*/
 }
 
 .courseTable {
@@ -355,19 +386,115 @@ tbody tr:nth-child(even) {
     border-bottom: none;
     font-family: 'Times New Roman';
     font-size: .7em;
-    margin: auto;
+    margin: 0 auto;
 }
 
 article h1 {
     font-size: 1em;
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
     background-color: none;
 }
 
-Header .fa {
-    background-color: rgba(212,185,254,255);
-    background-color: white;
+.fa {
+    background-color: transparent;
     padding: 2px;
+}
+
+Header .fa {
     font-size: x-large;
+}
+
+#leftcolum {
+    width: 73%;
+    border-right: 1px solid black;
+}
+#rightColumn {
+    width: 25%;
+    float: right;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+/*For HTML.html - 2 column layout with 1 column floated, margin clear*/
+#teamLeftColumn {
+    border-right: 1px solid black;
+    width: 73%;
+    /*box-sizing: border-box;*/
+    /*border-box changes the way width and height are figured. This means that width: 75% includes
+        content, padding, and border. (NOT margin)
+    */
+}
+#teamLeftColumn h1 {
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    color: maroon;
+}
+    #teamLeftColumn h2 {
+        margin: 0 auto;
+        font-size: 1.5em;
+        color:  indigo;
+    }
+
+#teamRightColumn {
+    width: 25%;
+    float: right;
+}
+
+#cssLeftColumn {
+    width: 75%;
+    float: left;
+    border-right: 1px dashed teal;
+    box-sizing: border-box;
+    /*border-box changes the way width and height are figured. This means that width: 75% includes
+        content, padding, and border. (NOT margin)
+    */
+}
+#aboutUs img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding: 2px 8px 8px 8px;
+}
+#aboutUs p {
+    margin: 0 100px 0 0;
+}
+.img2 {
+    margin: 0 50px 20px 20px;
+}
+.img1 {
+    margin: 0 5px 20px 100px;
+}
+
+#chooseUs1 img {
+    float: left;
+    margin: 0 50px 20px 100px;
+    padding: 2px 8px 8px 8px;
+    width: 450px;
+    height: 250px;
+}
+#chooseUs2 img {
+    float: right;
+    margin: 0 75px 20px 505px;
+    padding: 2px 8px 8px 8px;
+    width: 450px;
+    height: 250px;
+}
+
+.mainWrapper {
+    padding: 1%;
+}
+
+.asideWrapper {
+    padding: 1%;
+}
+
+.asideList li {
+    padding: 5px 20px 20px 5px;
+}
+.clear {
+    clear: both;
 }
