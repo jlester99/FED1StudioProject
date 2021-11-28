@@ -171,7 +171,6 @@ header h1 {
 
 footer {
     font-style: italic;
-    background-color: lavender;
     background-size: cover;
     color: darkblue;
     margin: 0 auto;
@@ -319,12 +318,11 @@ div.galleryItem {
 }
 #teamGallery p {
     margin: 0 25px 25px 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.teamPhoto {
+.teamPhoto p {
     float: left;
     margin: 0 50px 50px 75px;
-
 }
 
 #courseImageGallery {
@@ -378,7 +376,7 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #F7F4E5; /*apply alternating background to each row*/
+    background-color: lightyellow; /*apply alternating background to each row*/
 }
 
 .courseTable {
@@ -453,37 +451,82 @@ aside h2 {
         content, padding, and border. (NOT margin)
     */
 }
+#homePage {
+    margin: 0 250px;
+}
 #aboutUs img {
+    width: 150px;
+    height: 150px;
+}
+/*aboutUs .img1 {
+    margin: 0 auto;
+}*/
+#aboutUs .img2 {
+    /*padding: 0 0 0 10px;*/
+}
+#aboutUs section {
+    width: 35%;
     float: left;
-    width: 200px;
-    height: 200px;
-    padding: 2px 8px 8px 8px;
+    margin: 30px 0 0 0;
 }
-#aboutUs p {
-    margin: 0 100px 0 0;
+#aboutUs p{
+    width: 65%;
+    float: right;
 }
-.img2 {
-    margin: 0 50px 20px 20px;
+#chooseUs1 section {
+    width: 50%;
+    float: left;
 }
-.img1 {
-    margin: 0 5px 20px 100px;
+/*#chooseUs1 p {
+    width: 50%;
+    float: right;
+    min-height: 250px;
+}*/
+#chooseUs2 p {
+    width: 50%;
+    float: left;
+    /*min-height: 250px;*/
+}
+#chooseUs2 section {
+    width: 50%;
+    float: right;
 }
 
 #chooseUs1 img {
-    float: left;
-    margin: 0 50px 20px 100px;
-    padding: 2px 8px 8px 8px;
     width: 450px;
     height: 250px;
 }
 #chooseUs2 img {
-    float: right;
-    margin: 0 75px 20px 505px;
-    padding: 2px 8px 8px 8px;
     width: 450px;
     height: 250px;
+    padding: 0 50px;
+}
+#homePage #aboutUs {
+    height: 25%;
+}
+#homePage #chooseUs {
+    height: 75%;
+}
+#homePage #chooseUs article {
+    height: 50%;
+    padding: 8px;
+    display: inline-block;
 }
 
+    /*:nth child selector is used to efficently target only certain child elements.*/
+    /*#homePage section:nth-child(odd) h3, #homePage section:nth-child(even) h3 {
+        margin: 10px 75px;
+    }
+
+    #homePage section:nth-child(even) p {
+        margin: 0 75px;
+        width: 50%;
+        float:right;
+    }
+, #homePage section:nth-child(odd) p {
+    width: 50%;
+    float: left;
+}*/
 .mainWrapper {
     padding: 1%;
 }
@@ -494,6 +537,10 @@ aside h2 {
 
 .asideList li {
     padding: 5px 20px 20px 5px;
+}
+#linkToTop {
+    float: right;
+    text-decoration: underline;
 }
 .clear {
     clear: both;
