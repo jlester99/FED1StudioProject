@@ -358,7 +358,7 @@ table td, th {
 
 table {
     align-content: center;
-    width: 400px;
+    width: 500px;
 }
 
     table th {
@@ -367,7 +367,7 @@ table {
         background-color: #487BA8;
         background-color: #E6BAB9;
         text-align: center;
-        /*background-image: url('../images/colorful bg pastel rotated.jpg');*/
+
     }
 
 tbody tr:nth-child(even) {
@@ -420,6 +420,7 @@ aside h2 {
 #teamLeftColumn {
     border-right: 1px solid black;
     width: 73%;
+    display: inline-block;
     /*box-sizing: border-box;*/
     /*border-box changes the way width and height are figured. This means that width: 75% includes
         content, padding, and border. (NOT margin)
@@ -479,6 +480,10 @@ aside h2 {
     width: 60%;
     float: right;
     padding: 0 20px 10px 0;
+}
+#aboutUs p a{
+    font-size: .9em;
+    color: teal;
 }
 #chooseUs1 section {
     width: 50%;
@@ -543,9 +548,9 @@ aside h2 {
     width: 50%;
     float: left;
 }*/
-.mainWrapper {
+./*mainWrapper {
     padding: 1%;
-}
+}*/
 
 .asideWrapper {
     padding: 1%;
@@ -560,6 +565,13 @@ aside h2 {
 }
 .clear {
     clear: both;
+}
+.contact {
+    margin-top: 50px;
+}
+.contact #address {
+    font-size: 1em;
+
 }
 nav .current {
     background-color: mediumslateblue;
