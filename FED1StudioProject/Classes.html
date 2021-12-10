@@ -57,7 +57,7 @@
     <nav id="navStyle">
         <ul>
             <li><a href="index.html" target="_blank">Home</a></li>
-            <li><a class="current"href="Classes.html" target="_blank">Classes</a></li>
+            <li><a class="current" href="Classes.html" target="_blank">Classes</a></li>
             <li><a href="Team.html" target="_blank">Team</a></li>
             <li><a href="Contact.html" target="_blank">Contact</a></li>
         </ul>
@@ -114,7 +114,7 @@
                         </a>
                         <p>Dog Nutrition Breakdown</p>
                         <div class="description">
-                          These courses will provide an overview of Nutrigenomics, learn what to feed your dog and why, how various health condition and age of your dog affects their nutrition needs, how to deal with food intolerances and what to feed your dog to hep control weight.  <br />
+                            These courses will provide an overview of Nutrigenomics, learn what to feed your dog and why, how various health condition and age of your dog affects their nutrition needs, how to deal with food intolerances and what to feed your dog to hep control weight.  <br />
                             <a href=#dogNutritionSched>Class Schedule</a>
                         </div>
                     </div>
@@ -419,6 +419,34 @@
         </article>
 
     </footer>
+    <!-- Class Schedule Button -->
+    <div id="schedule-btn" class="button" onclick="openClassSchedNav()">
+        <span class="vertical-text">CLASS SCHEDULE</span>
+    </div>
 
+    <!-- Classe Schedule Nav -->
+    <div id="schedule-nav" class="sidenav">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeClassSchedNav()">&times;</a>
+        <a href=#dogBreedsSched>Dog Breeds</a><br />
+        <a href=#dogTrainSched>Dog Training Methods and Rewards</a><br />
+        <a href=#dogLangSched>Dog Communication and Body Languate</a><br />
+        <a href=#dogNutritionSched>Dog Nutrition Breakdown</a><br />
+        <a href=#dogBehaviorSched>Concepts of Dog Behavior</a><br />
+        <a href="#dogSafetySched>">Dog Safety and CPR</a>
+
+    </div>
+
+    <!-- Toggle Admin Menu -->
+    <script type="text/javascript">
+        function openClassSchedNav() {
+            document.getElementById("schedule-btn").style.display = "none";
+            document.getElementById("schedule-nav").style.width = "250px";
+        }
+
+        function closeClassSchedNav() {
+            document.getElementById("schedule-btn").style.display = "block";
+            document.getElementById("schedule-nav").style.width = "0";
+        }
+    </script>
 </body>
 </html>
